@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5 Tables</title>
+    <script>
+        function display(val)
+        {
+            document.getElementById("result").value+=val
+        }
+        function solve()
+        {
+            let x = document.getElementById("result").value
+            let y = eval(x)
+            document.getElementById("result").value = y
+        }
+        function cleaR()
+        {
+            document.getElementById("result").value = ""
+        }
+    </script>
+</head>
+<body>
+    <div id="Simple Table" style="border-style: dotted;">
+        <h1>Problem 1. Simple Table</h1>
+        <table style="border-style:groove">
+            <tr>
+                <td style="border-collapse: collapse;">
+                    <h1>Chochev.EU</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://chochev.eu/">
+                        <img src="logo.png" alt="" height="200" width="200">
+                    </a>
+                </td>
+                <td>
+                    <b>Accessible and high</b><br>
+                    <b>quality software</b><br>
+                    <b>education.</b> <br>
+                    Our mission is to make <br>
+                    people we train true <br>
+                    professionals in the software <br>
+                    industry and support them in <br>
+                    finding employment.
+                </td>
+            </tr>
+        </table>
+        <br>
+    </div>
+    <div id="Exam Results" style="border-style: dotted;">
+        <h1>Problem 2. Exam Results</h1>
+        <table border="1">
+            <tr>
+                <th colspan="4">Web fundamentals exam results</th>
+            </tr>
+            <tr>
+                <th>&#8470;</th>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Score</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Gosho</td>
+                <td>Goshev</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Tosho</td>
+                <td>Toshev</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Pesho</td>
+                <td>Pesho</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Gencho</td>
+                <td>Genchev</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Draga</td>
+                <td>Draganova</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <th colspan="4">Average score from 05 participants:500</th>
+            </tr>
+        </table>
+    </div>
+    <div id="Nested Tables" style="border-style: dotted;">
+        <h1>Problem 3. Nested Tables</h1>
+        <table border="1" style="border-spacing: 1px;">
+            <tr>
+                <th rowspan="2">
+                    <a href="https://chochev.eu/" target="_blank">
+                        <img src="logo.png" alt="">
+                    </a>
+                </th>
+                <td>
+                    <table border="1" style="border-spacing: 1px; font-size: 33px;">
+                        <tr>
+                            <td>
+                                Plovdiv
+                            </td>
+                        </tr>
+                        <tr>
+                            <th style="font-size: 40px;">
+                                <b>University</b>
+                            </th>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="***Calculator" style="border-style: dotted;">
+        <h1>Problem 4.	***Calculator</h1>
+        <table border="1">
+            <tr>
+                <td colspan="4"><input type="text" id="result"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="display('1')"/></td>
+                <td><input type="button" value="2" onclick="display('2')"/></td>
+                <td><input type="button" value="3" onclick="display('3')"/></td>
+                <td><input type="button" value="+" onclick="display('+')"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="display('4')"/></td>
+                <td><input type="button" value="5" onclick="display('5')"/></td>
+                <td><input type="button" value="6" onclick="display('6')"/></td>
+                <td><input type="button" value="-" onclick="display('-')"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="display('7')"/></td>
+                <td><input type="button" value="8" onclick="display('8')"/></td>
+                <td><input type="button" value="9" onclick="display('9')"/></td>
+                <td><input type="button" value="*" onclick="display('*')"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="C" onclick="cleaR()"/></td>
+                <td><input type="button" value="0" onclick="display('0')"/></td>
+                <td><input type="button" value="=" onclick="solve()"/></td>
+                <td><input type="button" value="/" onclick="displayx('/')"/></td> 
+            </tr>
+        </table>
+    </div>
+    <div>
+        <ul>
+            <li>
+                <a href="../index.html">Back to main</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
