@@ -1,0 +1,139 @@
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/nunito/v23/XRXI3I6Li01BKofiOc5wtlZ2di8HDLshdTk3j77e.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+  /* cyrillic */
+@font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/nunito/v23/XRXI3I6Li01BKofiOc5wtlZ2di8HDLshdTA3j77e.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+  /* vietnamese */
+@font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/nunito/v23/XRXI3I6Li01BKofiOc5wtlZ2di8HDLshdTs3j77e.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+  /* latin-ext */
+@font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/nunito/v23/XRXI3I6Li01BKofiOc5wtlZ2di8HDLshdTo3j77e.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+  /* latin */
+@font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/nunito/v23/XRXI3I6Li01BKofiOc5wtlZ2di8HDLshdTQ3jw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Verdana;
+    font-size: 13px;
+}
+#wrapper{
+    width: 1020px;
+    margin: 0 auto;
+}
+#headWrap{
+    background: rgb(251, 190, 97);
+    padding: 20px;
+}
+h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Nurito;
+}
+h2{
+    text-transform: uppercase;
+    color: rgb(44, 136, 151);
+    padding: 20px;
+}
+h5{
+    color: #fff;
+    padding: 15px;
+}
+#mainNav{
+    background: rgb(64, 49, 42);
+    height: 59px;
+}
+#mainNav ul li{
+    display: inline-block;
+    margin-left: 20px;
+    line-height: 59px;
+}
+#mainNav ul li a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Nunito;
+    font-size: 16px;
+}
+#news{
+    width: 60%;
+    float: left;
+    min-height: 500px;
+    background: rgb(247, 238, 223);
+}
+#sidebar{
+    width: 40%;
+    float: left;
+    min-height: 691px;
+    background: rgb(237, 222, 199);
+}
+main:after{
+    clear: both;
+    display: block;
+    content: '';
+}
+#mainFooter{
+    background: rgb(44, 136, 151);
+    padding: 20px;
+}
+#mainFooter p{
+    color: #fff;
+    font-family: Cambria;
+}
+#news article{
+    padding: 20px;
+}
+#news article time{
+    color: rgb(251, 190, 97);
+}
+#news article figcaption{
+    position: relative;
+    top: -40px;
+    left: 0px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 8px;
+    width:93.4%;
+}
+#rightNav{
+    background: rgb(44, 136, 151);
+    margin: 20px;
+}
+#rightNav ul li{
+    color: #fff;
+    list-style-type: none;
+    border-top: 1px solid rgb(57, 164, 182);
+    padding: 15px;
+}
+#sidebarBlock{
+    margin: 20px;
+}

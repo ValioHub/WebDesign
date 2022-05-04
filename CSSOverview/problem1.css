@@ -1,0 +1,68 @@
+body{
+    background-color: green;
+}
+table{
+    border: solid black 3px;
+    background-color: white;
+    border-radius: 10px;
+    border-spacing: 0px;
+    
+}
+
+#bottonright{
+    border-bottom-right-radius: 10px;
+    text-align: right;
+    padding-right: 10px;
+}
+#gray{
+    background-color: gray;
+}
+#right{
+    text-align: right;
+    padding-right: 10px;
+}
+#left{
+    text-align: left;
+    position: relative;
+    padding-left: 10px;
+}
+#center{
+    text-align: center;
+}
+#centerbet{
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+td{
+    border-top: solid black 3px;
+    border-right: solid black 3px;
+
+}
+th{
+    background-color: orange;
+    border-right: solid black 3px;
+}
+tr{
+}
+button{
+    height: 40px;
+    width: 40px;  
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: green;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    border-color: white;
+}
+td button:disabled {
+    background: #FF0000;
+}
+img{
+    margin-bottom: -4px;
+}
+#borderright{
+    border-right: none;
+}
