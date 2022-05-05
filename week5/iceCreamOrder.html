@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ice Cream Order</title>
+    </head>
+    <body>
+        <h1>Ice Cream Order</h1>
+        <form action="IceCreamOrder.html" method="post">
+            <fieldset>
+                <legend>User Details</legend>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="pwd">Password</label>
+                <input type="password" id="pwd" name="pwd" required><br>
+                <label for="flavor">Flavor:</label>
+            </fieldset>
+            <fieldset>
+                <legend> Order Details</legend>
+                <select name="flavor" id="flavor" required>
+                    <option value="choco">Chocolate</option>
+                    <option value="vanilia">Vanilia</option>
+                </select><br>
+                <label >Topping</label>
+                <input type="checkbox" id="sprinkles" name="sprinkles">
+                <label for="sprinkles">Sprinkles</label>
+                <input type="checkbox" id="nuts" name="nuts">
+                <label for="nuts">Nuts</label>
+                <input type="checkbox" id="wrippedCream" name="wrippedCream">
+                <label for="wrippedCream">Wripped Cream</label><br>
+                <label for="cupOrCone">Cup or Cone</label>
+                <input type="radio" id="cupOrCone" name="cupOrCone" value="0">
+                <label for="Cup">Cup</label>
+                <input type="radio" id="cupOrCone" name="cupOrCone" value="1">
+                <label for="plainCone">Plain Cone</label>
+                <input type="radio" id="cupOrCone" name="cupOrCone" value="2">
+                <label for="sugarCone">Sugar Cone</label>
+                <input type="radio" id="cupOrCone" name="cupOrCone" value="3">
+                <label for="waffleCone">Waffle Cone</label><br>
+                <label for="comment">Comment:</label><br>
+                <textarea name="comment" id="comment" cols="30" rows="10"></textarea><br>
+            </fieldset>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear form">
+        </form>
+    </body>
+</html>

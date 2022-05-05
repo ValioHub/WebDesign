@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Payment Form</title>
+    </head>
+    <body>
+        <form action="paymentForm.html" method="post">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required><br>
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required><br>
+            <label for="streetAddress">Street Address</label>
+            <input type="text" id="streetAddress" name="streetAddress" required><br>
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" required><br>
+            <label for="state">State</label>
+            <input type="text" id="state" name="state" required><br>
+            <label for="zip">ZIP/Postal Code</label>
+            <input type="text" id="zip" name="zip" required><br>
+            <label for="creditCardType">Credit Card Type</label><br>
+                <input type="radio" id="MasterCard" name="creditCardType" value="0">
+                <label for="MasterCard">MasterCard</label><br>
+                <input type="radio" id="visa" name="creditCardType" value="1">
+                <label for="visa">VISA</label><br>
+                <input type="radio" id="Discover" name="creditCardType" value="2">
+                <label for="Discover">Discover</label><br>
+            <label for="creditCardNumber">Credit Card Number</label>
+            <input type="text" id="creditCardNumber" name="creditCardNumber" required><br>
+            <label for="expirationDate">Expiration Date</label>
+            <select name="expirationDate" id="expirationDate">
+                <option value="" disabled selected>--Month--</option>
+                <option value="january">January</option>
+                <option value="february">February</option>
+                <option value="march">March</option>
+            </select>
+            <select name="expirationDate" id="expirationDate">
+                <option value="" disabled selected>--Year--</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+            </select><br>
+            <label for="specialNotes">Special Notes</label><br>
+            <textarea name="specialNotes" id="specialNotes" cols="30" rows="10" placeholder="enter notes here..."></textarea><br>
+            <input type="submit" value="Submit Payment">
+        </form>
+    </body>
+</html>
