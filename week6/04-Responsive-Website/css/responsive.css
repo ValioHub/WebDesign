@@ -199,12 +199,12 @@ footer .content .gallery img{
 
 
 html {
-   -webkit-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
 }
 .video embed,
 .video object,
 .video iframe {
-   width: 100%;
+	width: 100%;
    height: auto;
 }
 img{
