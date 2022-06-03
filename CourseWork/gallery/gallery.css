@@ -52,46 +52,57 @@ nav #wrap-nav{
 #logo{
     padding: 13px;
 }
-#intro{
-    margin-top: 171px;
+section{
+    margin: 20px  40px;
+    padding-top: 50px;
 }
-section #videoo{
-    margin-top: -90px;
+#container{
+    height: 300px;
+    background-image: url("./background.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+#feature-inner{
+    height: 100%;
+    box-sizing: border-box;
+    width: 38%;
+    padding: 60px 50px;
+    text-align: left;
+    float: left;
+    background-color: rgba(184,25,57,0.65);
+}
+#feature-text
+{
+    text-align: left;
+    color: white;
+}
+#block{
+    margin: 20px 40px;
+    height: 175px;
+}
+
+p{
+    font-size: 24px;
+    font-weight: bold;
+}
+div.gallery {
+    margin: 5px 17px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 250px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
     width: 100%;
-    filter:blur(5px);
-    object-fit:cover;
-}
-section #video-overlay{
-    padding: 0 20px;
-    width: 97%;
-    position: absolute;
-    top: 25%;
-    text-align: center;
-    color: white;
-    font-size: 40px;
-}
-#about-us{
-    padding: 110px 60px;
-}
-#div-about-us{
-    text-align: center;
-}
-#div-about-us h1{
-    font-size: 50px;
-}
-#div-about-us p{
-    font-size: 25px;
-    line-height: 50px;
-}
-#about-us-button{
-    background-color: #b81939;
-    color: white;
-    padding: 15px 25px;
-    text-decoration: none;
-    font-size: 20px;
-    line-height: 35px;
-}
-.footer-basic {
+    height: auto;
+  }
+  .footer-basic {
     padding:40px 0;
     background-color:black;
     color:#b81939;
