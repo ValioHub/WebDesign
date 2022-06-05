@@ -4,12 +4,15 @@
         <title>Dynamic Fitness - Order</title>
         <link rel="stylesheet" href="order/order.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    </head>
+        <script src="order/order.js"></script>
+      </head>
     <body>
         <header>
             <div id="wrapper">
                 <div id="logo">
+                  <a href="Main.html"> 
                     <img id="logojpg" src="main/Logo.jpg" alt="Dynamic Fitness">
+                </a>
                 </div>
             </div>
             <nav>
@@ -27,16 +30,16 @@
         </header>
         <section class="animate__animated animate__zoomIn">
             <div class="testbox">
-                <form action="/">
+                <form name="f1" action="#" onsubmit="return validateForm()" method="post">
                   <h1>Запазване на час за вашата тренировка</h1>
                   <p>Моля попълнете всички полета, благодарим Ви!</p>
                   <h4>Двете имена <span>*</span></h4>
                   <div class="name">
-                    <input type="text" name="name" placeholder="Име" required/>
-                    <input type="text" name="name" placeholder="Фамилия" required/>
+                    <input  type="text" name="firstname" placeholder="Име" required/>
+                    <input  type="text" name="lastname" placeholder="Фамилия" required/>
                   </div>
                   <h4>Телефонен номер <span>*</span></h4>
-                  <input type="text" name="telephone" placeholder="+359" required/>
+                  <input type="text" name="number" required/>
                   <h4>Email <span>*</span></h4>
                   <input type="email" name="email" placeholder="email@test.com" required/>
                   <h4>Локации <span>*</span></h4>
@@ -49,7 +52,6 @@
                   <h4>Дата на посещение <span>*</span></h4>
                   <div class="day-visited">
                     <input type="date" name="dayvisited" required/>
-                    <i class="fas fa-calendar-alt"></i>
                   </div>
                     <h4>Час на посещение <span>*</span></h4>
                   <div class="time-visited">

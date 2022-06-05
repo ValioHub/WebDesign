@@ -102,7 +102,6 @@ select {
     padding: 7px 0;
     border-radius: 3px;
     border: 1px solid #ccc;
-    background: #e6eef7;
 }
 option {
     background: #fff;
@@ -115,10 +114,9 @@ select, table {
 }
 .day-visited input, .time-visited input {
     width: calc(100% - 12px);
-    background: #e6eef7;
 }
 input[type="date"]::-webkit-inner-spin-button {
-    display: none;
+    display: block;
 }
 input[type="time"]::-webkit-inner-spin-button {
     margin: 2px 22px 0 0;
@@ -136,7 +134,7 @@ input[type="time"]::-webkit-inner-spin-button {
 [type="date"]::-webkit-calendar-picker-indicator {
     right: 0;
     z-index: 2;
-    opacity: 0;
+    margin: 0 5px 0 0;
 }
 .question-answer label {
     display: block;
