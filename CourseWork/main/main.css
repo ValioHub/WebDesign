@@ -53,6 +53,9 @@ nav #wrap-nav{
 #logo{
     padding: 13px;
 }
+.icon{
+    display: none;
+}
 #intro{
     margin-top: 171px;
 }
@@ -150,4 +153,46 @@ ul.list-inline li{
 }
 .footer-basic img{
     width: 50px;
+}
+@media (max-width: 768px){
+    section #video-overlay {
+        font-size: 30px;
+        top: 10%;
+    }
+    #logo img{
+        display: block;
+        margin: 0 auto;
+    }
+    nav #wrap-nav {
+        background-color: black;
+        position: relative;
+        overflow: hidden;
+        top: 0px;
+    }
+    div #menu{
+        display: none;
+    }
+    #menu ul li{
+        float: unset;
+        text-align: center;
+        padding: 5px 0;
+        
+    }
+    #menu  ul li a{
+        font-size: 20px;
+    }
+    nav a.icon {
+        display: block;
+        position: absolute;
+        right: 50px;
+        top: 35px;
+        font-size: 30px;
+        color: #b81939;
+      }
+}
+@media (max-width: 480px){
+    section #video-overlay {
+        font-size: 20px;
+        top: 10%;
+    }
 }
