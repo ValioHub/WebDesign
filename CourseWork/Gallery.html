@@ -3,7 +3,9 @@
     <head>
         <title>Dynamic Fitness - Gallery</title>
         <link rel="stylesheet" href="gallery/gallery.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <header>
@@ -24,6 +26,11 @@
                             <li><a href="ContactUs.html">Контакти</a></li>
                         </ul>
                     </div>
+                </div>
+                <div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars" ></i>
+                    </a>
                 </div>
             </nav>
         </header>
@@ -47,27 +54,32 @@
             <div id="block" class="animate__animated animate__fadeInLeft animate__delay-1s">
                 <div class="gallery">
                     <a target="_blank" href="gallery/pic1.jpg">
-                      <img src="gallery/pic1.jpg" alt="Cinque Terre" width="600" height="400">
+                      <img src="gallery/pic1.jpg" alt="Gym" width="600" height="400">
                     </a>
                   </div>
                   <div class="gallery">
                     <a target="_blank" href="gallery/pic2.jpg">
-                      <img src="gallery/pic2.jpg" alt="Forest" width="600" height="400">
+                      <img src="gallery/pic2.jpg" alt="Gym" width="600" height="400">
                     </a>
                   </div>
                   <div class="gallery">
                     <a target="_blank" href="gallery/pic3.jpg">
-                      <img src="gallery/pic3.jpg" alt="Northern Lights" width="600" height="400">
+                      <img src="gallery/pic3.jpg" alt="Gym" width="600" height="400">
                     </a>
                   </div>
                   <div class="gallery">
                     <a target="_blank" href="gallery/pic4.jpg">
-                      <img src="gallery/pic4.jpg" alt="Mountains" width="600" height="400">
+                      <img src="gallery/pic4.jpg" alt="Gym" width="600" height="400">
                     </a>
                   </div>
-                  <div class="gallery">
+                  <div class="gallery" id="clear">
                     <a target="_blank" href="gallery/pic5.jpg">
-                      <img src="gallery/pic5.jpg" alt="Mountains" width="600" height="400">
+                      <img src="gallery/pic5.jpg" alt="Gym"  width="600" height="400">
+                    </a>
+                  </div>
+                  <div class="gallery" >
+                    <a target="_blank" href="gallery/pic6.jpg">
+                      <img src="gallery/pic6.jpg" alt="Gym" width="600" height="400">
                     </a>
                   </div>
             </div>
@@ -87,5 +99,15 @@
                 <p class="copyright">Dynamic Fitness © 2022</p>
             </footer>
         </div>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("menu");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+        </script>
     </body>
 </html>
