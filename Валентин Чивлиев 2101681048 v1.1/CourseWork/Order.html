@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dynamic Fitness - Order</title>
+        <link rel="stylesheet" href="order/order.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="order/order.js"></script>
+      </head>
+    <body>
+        <header>
+            <div id="wrapper">
+                <div id="logo">
+                  <a href="Main.html"> 
+                    <img id="logojpg" src="main/Logo.jpg" alt="Dynamic Fitness">
+                </a>
+                </div>
+            </div>
+            <nav>
+                <div id="wrap-nav">
+                    <div id="menu">
+                        <ul>
+                            <li><a href="Order.html">Запазване на час</a></li>
+                            <li><a href="Gallery.html">Снимки</a></li>
+                            <li><a href="Aboutus.html">За нас</a></li>
+                            <li><a href="ContactUs.html">Контакти</a></li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+              <div>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars" ></i>
+              </a>
+              </div>
+            </nav>
+        </header>
+        <section class="animate__animated animate__zoomIn">
+            <div class="testbox">
+                <form name="f1" action="#" onsubmit="return validateForm()" method="post">
+                  <h1>Запазване на час за вашата тренировка</h1>
+                  <p>Моля попълнете всички полета, благодарим Ви!</p>
+                  <h4>Двете имена <span>*</span></h4>
+                  <div class="name">
+                    <input  type="text" name="firstname" placeholder="Име" required/>
+                    <input  type="text" name="lastname" placeholder="Фамилия" required/>
+                  </div>
+                  <h4>Телефонен номер <span>*</span></h4>
+                  <input type="text" name="number" required/>
+                  <h4>Email <span>*</span></h4>
+                  <input type="email" name="email" placeholder="email@test.com" required/>
+                  <h4>Локации <span>*</span></h4>
+                  <select required>
+                    <option class="disabled" value="location" disabled selected>*Моля изберете*</option>
+                    <option value="1">Варна, ул. “Иван Срацимир” 2А (Билла Колхозен пазар), ет. 3</option>
+                    <option value="2">гр. Варна, Идеален Център ул.”Опълченска” №10 (до у-ще “Кирил и Методий”), Варна</option>
+                    <option value="3">гр. Пловдив, бул. “Свобода” 28</option>
+                  </select>
+                  <h4>Дата на посещение <span>*</span></h4>
+                  <div class="day-visited">
+                    <input type="date" name="dayvisited" required/>
+                  </div>
+                    <h4>Час на посещение <span>*</span></h4>
+                  <div class="time-visited">
+                    <input type="time" name="timevisited" required/>
+                  </div>
+                  <h4>Имате ли опит?</h4>
+                  <div class="question-answer">
+                    <label><input type="radio" value="none" name="training experience" /> Не</label>
+                    <label><input type="radio" value="none" name="training experience" /> По-малко от година опит</label>
+                    <label><input type="radio" value="none" name="training experience" /> 1-5 години опит</label>
+                    <label><input type="radio" value="none" name="training experience" /> +5 години опит</label>
+                </div>
+                  <h4>Възраст<span>*</span></h4>
+                  <select required>
+                    <option class="disabled" value="location" disabled selected>*Моля изберете*</option>
+                    <option value="under 13">Под 13</option>
+                    <option value="13-17">13-17</option>
+                    <option value="18-24">18-24</option>
+                    <option value="25-34">25-34</option>
+                    <option value="35-44">35-44</option>
+                    <option value="45-54">45-54</option>
+                    <option value="55 or older">55 или по-възрастен</option>
+                  </select>
+                  <h4>Нуждаете ли се от треньор за тренировката?</h4>
+                  <div class="question-answer">
+                    <label><input type="radio" value="none" name="trainer" /> Не</label>
+                    <label><input type="radio" value="none" name="trainer" /> Да</label>
+                  </table>
+                  <h4>Допълнителни забележки, въпроси или препоръки, за да направим вашата тренировка по-приятна?</h4>
+                  <textarea rows="5"></textarea>
+                  <div class="btn-block">
+                    <button type="submit" href="/">Изпрати заявката</button>
+                  </div>
+                </form>
+              </div>
+        </section>
+          <div class="footer-basic">
+            <footer>
+                    <div class="social">
+                    <a href="https://www.instagram.com/valentin_chivliev/" target="_blank"><img src="main/iconinstagram.png" alt="instagram"></a>
+                        <a href="https://www.linkedin.com/in/valentin-chivliev-29162a22a/" target="_blank"><img src="main/iconlinkedin.png" alt="linkedin"></a>
+                        <a href="https://www.facebook.com/Valentin.Chivliev"><img src="main/iconfacebook.png" alt="facebook"></a>
+                        <a href="https://github.com/ValioHub"><img src="main/icongithub.png" alt="github"></a>
+                    </div>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="Main.html">Начална страница</a></li>
+                        <li class="list-inline-item"><a href="Aboutus.html">За нас</a></li>
+                        <li class="list-inline-item"><a href="ContactUs.html">Контакти</a></li>
+                    </ul>
+                <p class="copyright">Dynamic Fitness © 2022</p>
+            </footer>
+        </div>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("menu");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+        </script>
+    </body>
+</html>

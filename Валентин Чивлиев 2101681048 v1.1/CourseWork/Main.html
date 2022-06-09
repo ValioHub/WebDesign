@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dynamic Fitness</title>
+        <link rel="stylesheet" href="main/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <div id="wrapper">
+                <div id="logo">
+                    <a href="Main.html"> 
+                        <img id="logojpg" src="main/Logo.jpg" alt="Dynamic Fitness">
+                    </a>
+                </div>
+            </div>
+            <nav>
+                <div id="wrap-nav">
+                    <div id="menu">
+                        <ul>
+                            <li><a href="Order.html">Запазване на час</a></li>
+                            <li><a href="Gallery.html">Снимки</a></li>
+                            <li><a href="Aboutus.html">За нас</a></li>
+                            <li><a href="ContactUs.html">Контакти</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars" ></i>
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <section id="intro">
+            <div>
+                <video  id="videoo" autoplay loop muted >
+                    <source src="main/video.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div id="video-overlay" class="animate__animated animate__backInUp">
+                <h2>
+                    Real power doesn't come to those
+                    <br>
+                    Who were born strongest or fastest or smartest
+                    <br>
+                    It comes to those
+                    <br>
+                    Who would do anything to achieve it
+                </h2>
+            </div>
+        </section>
+        <section id="about-us">
+            <div id="div-about-us">
+                <h1>Dynamic Fitness</h1>
+                <p>
+                    Dynamic Fitness е модерен спортно – възстановителен комплекс на площ повече от 1000 кв.м. 
+                    <br>
+                    Центъра предлага разнообразие от качесвени услуги на ниски цени.
+                    <br>
+                    Той е подходящ за провеждане на пълноценна тренировка, както на опитни спортисти, 
+                    <br>
+                    така и на всеки, решил да възстанови или поддържа добрата си форма и здраве.
+                </p>
+                <a href="Aboutus.html" id="about-us-button">За Dynamic Fitness</a>
+            </div>
+        </section>
+        <div class="footer-basic">
+            <footer>
+                <div class="social">
+                    <a href="https://www.instagram.com/valentin_chivliev/" target="_blank"><img src="main/iconinstagram.png" alt="instagram"></a>
+                    <a href="https://www.linkedin.com/in/valentin-chivliev-29162a22a/" target="_blank"><img src="main/iconlinkedin.png" alt="linkedin"></a>
+                    <a href="https://www.facebook.com/Valentin.Chivliev"><img src="main/iconfacebook.png" alt="facebook"></a>
+                    <a href="https://github.com/ValioHub"><img src="main/icongithub.png" alt="github"></a>
+                </div>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="Main.html">Начална страница</a></li>
+                    <li class="list-inline-item"><a href="Aboutus.html">За нас</a></li>
+                    <li class="list-inline-item"><a href="ContactUs.html">Контакти</a></li>
+                </ul>
+                <p class="copyright">Dynamic Fitness © 2022</p>
+            </footer>
+        </div>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("menu");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+            </script>
+    </body>
+</html>

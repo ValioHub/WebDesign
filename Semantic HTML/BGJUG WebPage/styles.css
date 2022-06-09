@@ -1,0 +1,146 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#wrapper {
+    width: 1020px;
+    margin: 0 auto;
+}
+#main-header{
+        padding-left: 50px;
+        padding-bottom: 35px;
+}
+#head-wrap{
+	padding: 15px;
+}
+#main-nav ul li{
+	display: inline-block;
+	margin-left: 30px;
+	line-height: 30px;
+}
+#main-nav ul li a {
+	color: grey;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 16px;
+}
+#site-search{
+ margin-left: 448px;
+ border-width: 1px;
+ background: #dbdddc;
+}
+#left-hr{
+	margin-top: 50px;
+	margin-bottom: 10px;
+}
+aside ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    color: #605EA7;
+}
+input{
+	margin-left: 420px;
+	height: 20px;
+	border-width: 1px;
+}
+.icon-rtl {
+	padding-right: 25px;
+	background: url("search.png") no-repeat right;
+	background-size: 20px;
+  }
+section{
+	margin-left: 35px;
+    float: left;
+    width: 50%;
+}
+section .blue {
+	color: #605EA7;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.caption{
+	word-spacing: 2px;
+	font-size: 80%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #777777;
+}
+#main-news-hr{
+	width: 100%;
+}
+.right-hr{
+	width: 68%;
+}
+#left {
+    float: left;
+    width: 20%;
+}
+#right {
+    float: right;
+    width: 20%;
+}
+.grey {
+    color: #AFAFAF;
+	font-size: 80%;
+	padding-top: 20px;
+
+}
+.submit{
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: top;
+}
+#small-footer{
+	display: flex;
+	align-items: center;
+	background-color: #f7f7f7;
+	position:absolute;
+   bottom:-50px;
+   width:80%;
+   height:38px; 
+}
+#footer-icon{
+padding-top: -5px;
+
+}
+#small-footer-text{
+	color: #AFAFAF;
+	font-size: 17px;
+padding-top: 5px;
+padding-bottom: 5px;
+padding-left: 20px;
+}
+#main-footer{
+	background-color: black;
+	height: 150px;
+	width:80%;
+	position:absolute;
+	bottom:-200px;
+}
+
+.footer-columns{
+	display: inline-block;
+	color: #f7f7f7;
+	text-align: bottom;
+	padding-top: 15px;
+	padding-left: 20px;
+	width: 17%;
+	vertical-align: top;
+}
+#first-column{
+	font-size: 18px;
+}
+ul li {
+	list-style: none;
+}
+.column-title{
+	color: #dedbd3;
+	font-size: 14px;
+	padding-bottom: 10px;
+}
+.grey-text{
+	color: grey;
+	font-size: 15px;
+}

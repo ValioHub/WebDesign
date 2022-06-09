@@ -1,0 +1,274 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*Body start */
+body {
+    background-image: url(../background-flowers.jpg);
+    background-repeat: repeat;
+}
+
+/*Header */
+
+body,
+header,
+nav,
+ul,
+li,
+section,
+article,
+h1,
+h2,
+aside,
+a,
+p,
+div,
+footer,
+img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: right;
+    width: 100%;
+}
+
+#wrapper {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+body #wrapper>header {
+    flex: 2 100%;
+}
+
+footer {
+    flex: 1 100%;
+}
+
+body aside.left {
+    flex: 3;
+    margin-bottom: 20px;
+}
+
+body aside.right {
+    flex: 1;
+    margin-bottom: 30px;
+}
+
+body section {
+    flex: 4;
+    margin: 0 20px 50px 20px;
+    height: 100%;
+    padding: 10px 20px;
+}
+
+#wrapper>header,
+aside,
+section,
+footer {
+    background-color: rgba(254, 227, 229, 0.9);
+    border: 2px solid black;
+}
+
+#wrapper>header {
+    padding: 2%;
+    margin-bottom: 10px;
+}
+
+#wrapper>header h1 a {
+    display: flex;
+    text-decoration: none;
+    padding-bottom: 30px;
+}
+
+#wrapper>header h1 a span {
+    color: black;
+    font-size: 50px;
+    float: right;
+}
+
+header h1 a img {
+    width: 20%;
+    height: 10%;
+    margin-top: 10px;
+}
+
+header nav>ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header nav ul li {
+    background-color: #eb2a7b;
+    border: 1px solid black;
+    padding: 10px 0;
+    margin-left: 20px;
+    width: 150px;
+    text-align: center;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+aside.left {
+    padding: 10px;
+    width: 80%;
+    float: left;
+}
+
+aside.left a {
+    color: black;
+    text-decoration: none;
+
+}
+
+aside.left a img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+aside.left a span {
+    vertical-align: -15%;
+}
+
+aside.right {
+    padding: 15px 10px;
+    width: 20%;
+    float: right;
+    height:100%;
+
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+#wrapper section article header h1 {
+    font-size: 25px;
+    width: 100%;
+    padding: 30px 0px;
+    text-align: center;
+}
+
+#wrapper section div img {
+    width: 24%;
+}
+
+footer {
+    height: 70px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer h2 {
+    margin-top: 17px;
+}
+
+footer h2 a {
+    font-size: 20px;
+    color: black;
+}
+
+@media(max-width: 980px) {
+    #wrapper {
+        width: 100%;
+    }
+
+    body section {
+        margin: 0 2% 5% 2%;
+        height: 100%;
+        padding: 1% 0 2% 1%;
+    }
+
+    #wrapper section div img {
+        width: 32.2%;
+    }
+}
+
+@media(max-width: 780px) {
+    header nav>ul {
+        justify-content: space-around;
+    }
+
+    #wrapper>header h1 a {
+        justify-content: space-around;
+    }
+    header span{
+        font-size: 15px;
+    }
+    header h1 a img {
+        width: 40%;
+        height: 30%;
+    }
+
+    body aside.left {
+        flex: 1 100%;
+        margin-bottom: 10px;
+        width: 50%;
+    }
+
+    body aside.right {
+        flex: 1 100%;
+        width: 50%;
+        margin-bottom: 2%;
+        height: 250px;
+    }
+
+    body section {
+        flex: 1 100%;
+        order: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 640px) {
+    #wrapper>header h1 a {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        height: 150px;
+    }
+
+    header h1 a img {
+        width: 60%;
+        height: 40%;
+    }
+
+    #wrapper>header h1 a span {
+        font-size: 30px;
+    }
+
+    header nav>ul {
+        margin-left: 15%;
+        flex-direction: column;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    header nav ul li {
+        background-color: #eb2a7b;
+        border: 1px solid black;
+        padding: 10px 0;
+        margin-left: 1%;
+        width: 80%;
+        text-align: center;
+    }
+
+    #wrapper section div img {
+        width: 49%;
+    }
+
+    footer h2 {
+        font-size: 30px;
+        color: black;
+    }
+}

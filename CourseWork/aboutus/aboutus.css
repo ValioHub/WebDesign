@@ -54,7 +54,6 @@ nav #wrap-nav{
 }
 section{
     margin: 20px  40px;
-    padding-top: 50px;
 }
 #container{
     height: 300px;
@@ -84,13 +83,18 @@ section{
 }
 
 p{
-    font-size: 22px;
+    font-size: 20px;
 }
 article{
-    padding: 10px 75px;
+    padding: 10px 45px;
+    display: grid;
 }
 #div-about-us{
-    text-align:justify;
+    column-count: 3;
+    column-rule-style: solid;
+    text-align:left;
+    padding: 10px 85px;
+    font-size: 20px;
 }
 #div-about-us p{
     font-size: 20px;
